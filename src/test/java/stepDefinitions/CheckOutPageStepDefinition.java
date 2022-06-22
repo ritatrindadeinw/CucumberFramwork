@@ -43,6 +43,10 @@ public class CheckOutPageStepDefinition {
     public void verifies_if_user_has_ability_to_enter_promo_code_and_place_the_order() throws Throwable {
     	assertTrue(checkOutPage.verifiyPromoButton());
     	assertTrue(checkOutPage.verifyPlaceOrder());
+    	
+    	if(checkOutPage.verifiyPromoButton() && checkOutPage.verifyPlaceOrder()) {
+    		System.out.println("It is all in order.");
+    	}
     }
 	
 }
