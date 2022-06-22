@@ -47,6 +47,7 @@ public class CheckOutPageStepDefinition {
     	if(checkOutPage.verifiyPromoButton() && checkOutPage.verifyPlaceOrder()) {
     		System.out.println("It is all in order.");
     		System.out.println("Great work! :)");
+    		System.out.println("Pretending we're doing changes to the project.");
     	}
     }
 	
